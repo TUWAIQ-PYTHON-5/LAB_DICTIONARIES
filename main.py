@@ -19,13 +19,19 @@
 # - If the number is less or more than 10 numbers, print "This is invalid number".
 # - If the number contains letters or symbols, print "This is invalid number".
 
-myPhoneBook = {"0568323222" : "amal" ,  "0522222232" : "Mohammed" , "0532335983" : "Khadijah" , "0545341144" : "Abdullah" , "0545534556" : "Rawan" , "0560664566" : "Faisal" , "0567917077" :"Layla" }
+myPhoneBook = {"0568323222" : "amal" ,
+  "0522222232" : "Mohammed" , 
+  "0532335983" : "Khadijah" , 
+  "0545341144" : "Abdullah" , 
+  "0545534556" : "Rawan" ,
+   "0560664566" : "Faisal" ,
+    "0567917077" :"Layla" }
 
 def findOwner (number:str):
     if len(number) == 10 and number.isdigit():
         for element in myPhoneBook:
             if  element == number:
-                nameOfOwner = myPhoneBook.get(number )
+                nameOfOwner = myPhoneBook.get(number , "Sorry, the number is not found" )
                 return nameOfOwner
         else:
             sorryMsg = "Sorry, the number is not found"
@@ -41,10 +47,15 @@ print(findOwner(input("please enter a number to search : ")))
 
 
 def re_arranges(numberList : list) -> list:
-    
-    myorder = [2 ,5 , 3 , 6 ,0 , 4, 1]
-    numberList = [numberList[i] for i in myorder]
-    return numberList
+    list_zero=[]
+    list_numbers=[]
+    for i in numberList:
+        if i == 0:
+            list_zero.append(i)
+        else:
+            list_numbers.append(i)
+    re_arranges_list = list_numbers + list_zero
+    return re_arranges_list            
     
 
 print(re_arranges([5, 0, 34, 9, 0, 13, 8]))    
