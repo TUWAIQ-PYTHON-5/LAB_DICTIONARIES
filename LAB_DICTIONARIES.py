@@ -18,20 +18,16 @@ def findOwner (number:str):
                 return nameOfOwner
         else:
             sorry = "Sorry, the number is not found"
-            return sorry
+            return sorry 
     else:
         
         return "This is invalid number"
-print(findOwner(input("please enter a number to search : ")))
+print(findOwner(input("enter the number you want to search for : ")))
 
 
 
+def function_1 (list1: list):
+    list1.sort(reverse=True)
+    return list1
+print (function_1([5, 0, 34, 9, 0, 13, 8]))
 
-def re_arranges(numberList : list) -> list:
-    
-    mylist = [2 ,5 , 3 , 6 ,0 , 4, 1]
-    numberList = [numberList[i] for i in mylist]
-    return numberList
-    
-
-print(re_arranges([5, 0, 34, 9, 0, 13, 8])) 
