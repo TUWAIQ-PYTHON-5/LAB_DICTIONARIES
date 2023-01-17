@@ -36,23 +36,26 @@ print("##############################")
 def rearr (lis : list) ->list:
     #print(lis)
     swap=[]
+    last=[]
     
-    #while (lis[-1]!=0):
+    i:int =0
     for i in range(len(lis)):
             if (lis[i] == 0):
-                swap.append(lis[i+1])
-                print(lis[i+1])
+                swap.append(lis[i])
+                #print(lis[i+1])
                 #lis.append(swap[i-1])
             else:
-                continue
+                last.append(lis[i])
+                #continue
                 #swap.append([i+1])
                 #lis[i]=swap
                 #print(i)
             
-    print(lis)
+    print(last)
     print(swap)
-    return lis
+    last+=swap
+    return last
 
 usrList = [5, 0, 34, 9, 0, 13, 8]
-rearr(usrList)
+print(rearr(usrList))
 
