@@ -14,7 +14,8 @@
 
 '''
 number=str(input("Enter the number:"))
-phone_book1={"Amal":"0568323222","Mohammed":"0522222232","Khadijah":"0532335983","Abdullah":"0545341144","Rawan":"0545534556","Faisal":"0560664566","Layla":"0567917077"}
+
+phone_book1={"0568323222":"Amal","0522222232":"Mohammed","0532335983":"Khadijah","0545341144":"Abdullah","0545534556":"Rawan","0560664566":"Faisal","0567917077":"Layla"}
  
 number_2=int(number) 
 if number_2>10 and number_2<10:
@@ -45,7 +46,7 @@ while number =="0560664566":
 while number =="0567917077":
   print("the name of the owner is Layla")
   break
-else :
+else:
   print( "Sorry, the number is not found")
 
 
