@@ -1,37 +1,17 @@
-phone_book= {"Amal":568323222,"Mohammed" :568323222,"Khadijah":532335983,"Abdullah":545341144,"Rawan":545534556,"Faisal":560664566,"Layla":567917077}
-for x, y in phone_book.items():
-    print(y)
-else:
-    print("Sorry,the number is not found")
-
-
-
-
-for x,y in phone_book.items():
-    if y== phone_book:
-        print(len[y])
-    else:
-     print("This is invalid number")
-
-
-
-for x,y in phone_book.items():
-    if y== y:
-        print(y)
-    else:        
-     print("This is invalid number")
-
-
-
-
-def rearranges(ls:list):
-    for ls in range(0,7,2):
-     print(ls)
-rearranges(5,0,43,9,0,13,8)
-        
-    
+def value_name(number):
+    phone_book={'0568323222':'Amal','05632322':'mohaamad'}
+    if not number.isdigit() or len(number)!=10:
+        return"This is invalid number"
+    return phone_book.get(number,"sorry, the number is not found")
+phone_book=input("enter number")
+print(value_name(phone_book))
 
 
 
 
 
+
+def number_of_funcation(number:list):
+    number.sort(reverse=True)
+    return number
+print(number_of_funcation([5, 0, 34, 9, 0, 13, 8]))
