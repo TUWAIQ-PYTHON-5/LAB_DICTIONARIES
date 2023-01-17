@@ -51,8 +51,8 @@ def rearr (lis : list) ->list:
                 #lis[i]=swap
                 #print(i)
             
-    print(last)
-    print(swap)
+    #print(last)
+    #print(swap)
     last+=swap
     return last
 
