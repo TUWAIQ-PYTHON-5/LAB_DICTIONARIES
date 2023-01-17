@@ -22,3 +22,11 @@ You can follow the table below:
 ## Q2:Write a function that receives a list containing the following numbers : 
 - [5, 0, 34, 9, 0, 13, 8]
 - rearranges the list so that the zeros are the end of the list, and finally returns the arranged list.
+
+
+
+lst=[5, 0, 34, 9, 0, 13, 8]
+def lst_function(my_lst:list):
+    arrange_lst= [nonZero for nonZero in my_lst if nonZero!=0]+[Zero for Zero in my_lst if Zero==0]
+    return arrange_lst
+print(lst_function(lst))
