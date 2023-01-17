@@ -1,20 +1,18 @@
-book_phone = {"Amal" : "0568323222", "Mohammed": "0522222232",
-"Khadijah" : "0532335983", "Abdullah" : "0545341144","Rawan" : "0545534556" 
-,"Faisal" : "0560664566", "Layla": "0567917077"}
-
 def find_num(number):
-    for name, phone in book_phone.items():
-        if phone == number:
-            return name
-number = input("Enter a phone number:")
-print(find_num(number))
-if not number.isdigit() or len(number) != 10:
-      print("This is invalid number")
-elif number in book_phone:
-  print("the owner is:"+ book_phone[number]+ "")
+    book_phone = {'0568323222': "Amal", '0522222232': 'Mohammed',"0532335983": 'Khadijah' }
+
+    if not number.isdigit() or len(number) != 10:
+      return "This is invalid number"
+      
+    elif book_phone.get(number) == None:
+      return "Sorry, the number is not found"
     
-else:
-   print("Sorry, the number is not found")
+    else:
+      return book_phone.get(number)
+
+book_phone = input("Enter a phone number:")
+print(find_num(book_phone))
+
 
 
 
