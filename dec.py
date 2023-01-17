@@ -16,8 +16,8 @@ phoneNumber = input('please enter phone number : ')
 print(getOwnerPhone(phoneNumber))
 
 def rearranges(numberList: list) -> list:
-    listnu = [2, 3, 5, 6, 0, 4, 1]
+    listnu = [5, 0, 34, 9, 0, 13, 8]
     numberList = [numberList[i] for i in listnu]
     return numberList
 
-print(rearranges([5, 0, 34, 9, 0, 13, 8]))
+print(rearranges)
