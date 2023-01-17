@@ -4,11 +4,11 @@ def my_listpass(my_list:list):
 
 
 
-phone_book ={"amal": 568323222 , "Mohammed" :522222232, "Khadijah" : 532335983 , "Abdullah" : 545341144, "Rawan": 545534556, "Layla": 567917077 , "Faisal" : 560664566}
+phone_book ={"0568323222": "Amal" ,"0522222232" : "Mohammed", "0532335983": "Khadijah"  , "0545341144" : "Abdullah"  ,  "0545534556" : "Rawan",  "0567917077": "Layla",   "0560664566" : "Faisal"}
 find_number:int=input("enter phone number: ")
 
-if find_number in phone_book.values():
-    print("its exist")
+if find_number in phone_book.keys():
+    print("hello ",phone_book.get(find_number))
 elif len(find_number) > 10:
     print("This is invalid number")
 elif not find_number.isnumeric():
