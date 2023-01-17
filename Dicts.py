@@ -1,4 +1,5 @@
-'''def numQuery(phNum : str):
+#Q1
+def numQuery(phNum : str):
     print 
     if (len(phNum) != 10): 
         print("This is invalid number")
@@ -28,15 +29,17 @@
 
 usrNum : str = input("Enter Phone No.")
 numQuery(usrNum)
-'''
 
+print("##############################")
+
+#Q2
 def rearr (lis : list) ->list:
     #print(lis)
     swap=[]
     
     #while (lis[-1]!=0):
     for i in range(len(lis)):
-            if (lis.index[i] == 0):
+            if (lis[i] == 0):
                 swap.append(lis[i+1])
                 print(lis[i+1])
                 #lis.append(swap[i-1])
